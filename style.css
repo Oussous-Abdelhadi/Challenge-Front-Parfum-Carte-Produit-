@@ -1,0 +1,193 @@
+/* *{
+    Gradillage pour debug
+    box-sizing: border-box;
+    outline: 1px solid limegreen !important;
+    background: rgb(0 100 0 / 0.1);
+} */
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+.container{
+    width: 600px;
+    display: flex;
+    border-radius: 10%;
+}
+
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 5% 5% 0 ;
+    display: flex;
+    justify-content: center;
+}
+
+.content2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_img{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3% 0% 0% 3%;
+}
+
+img{
+    width: 300px;
+    height: 100%;
+    border-radius: 3% 0% 0% 3%;
+
+}
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fraunces{
+    font-family: 'Fraunces', serif;
+    text-align: justify;
+}
+#perfume{
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: .8em;
+    margin-top: 30px;
+}
+
+#title {
+    font-size: 2em;
+    text-align: justify;
+    margin-top: 15px;
+    width: 82%;
+    line-height: 1;
+}
+
+#description{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+sup{
+    text-decoration: line-through;
+    margin-left: 25px;
+}
+
+#prix{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+button{
+    margin-top: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px; 
+    width: 100%;
+    padding: 15px;
+    align-self: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+#text-btn{
+    font-size: 1.2em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+svg{
+    vertical-align: sub;
+    margin-right: 8px;
+}
+
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width : 420px) {
+    .attribution{
+        display: none;
+    }
+
+    *{
+        margin: 0;
+    }
+
+    body{
+        height: 100vh;
+    }
+    .container{
+        display: block;
+        height: 90%;
+        width: 90%;
+    }
+
+    .div_img{
+        height: 40%;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 3% 3% 0 0;
+        object-fit:cover;
+    }
+
+    .content{
+        height: 60%;
+        border-radius: 0 0 3% 3%;
+    }
+
+
+    #perfume{
+        margin-top: 20px;
+    }
+
+    #title{
+        width: 100%;
+        font-size: 2em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #description{
+        font-size: 0.9em;
+    }
+
+    #text-prix{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #prix{
+        font-size: 40px;
+    }
+
+    button{
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+}
+
